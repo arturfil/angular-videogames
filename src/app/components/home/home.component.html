@@ -1,0 +1,16 @@
+<div class="container cont-videogames">
+  <div class="row">
+    <div *ngFor="let videogame of videogames" class="col-md-4 col-lg-4 col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://img-eshop.cdn.nintendo.net/i/7c8f2e897c9e025649f97d4c9d5e1f92497bd6217bd442d6de8de17c46142e78.jpg?w=1000" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ videogame.name }}</h5>
+          <p class="card-text">{{videogame.description }}</p>
+          <p class="card-text">{{videogame.category.name }}</p>
+          <p class="card-text">{{videogame.price }}</p>
+          <a href="#" class="btn btn-primary">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
